@@ -11,6 +11,9 @@ styles.
 Apple Silicon
 ```bash
 npm install -g @mapnik/core-darwin-arm64@4.1.4
+git clone https://github.com/cropquest/geojson-mapnikify.git
+cd geojson-mapnikify
+npm -g install
 ```
 
 As a dependency (directly from GitHub):
