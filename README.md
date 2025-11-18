@@ -8,6 +8,11 @@ styles.
 
 ## install
 
+Apple Silicon
+```bash
+npm install -g @mapnik/core-darwin-arm64@4.1.4
+```
+
 As a dependency (directly from GitHub):
 
 ```bash

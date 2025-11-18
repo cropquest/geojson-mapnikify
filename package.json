@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/geojson-mapnikify",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "transform geojson with simplestyle-spec into mapnik xml",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,6 @@
     "@mapbox/blend": "^2.0.1",
     "@mapbox/geojson-normalize": "~0.0.1",
     "@mapbox/makizushi": "^3.0.1",
-    "@mapnik/core-darwin-arm64": "^4.1.4",
     "@mapnik/mapnik": "^4.7.5",
     "agentkeepalive": "^4.6.0",
     "minimist": "~1.2.8",
