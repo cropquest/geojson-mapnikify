@@ -1,12 +1,6 @@
-⚠️ This repository is no longer actively maintained by Mapbox.
-
-##
-
-[![Build Status](https://travis-ci.com/mapbox/geojson-mapnikify.svg?branch=master)](https://travis-ci.com/mapbox/geojson-mapnikify)
-[![Coverage Status](https://coveralls.io/repos/mapbox/geojson-mapnikify/badge.png)](https://coveralls.io/r/mapbox/geojson-mapnikify)
-[![Code Climate](https://codeclimate.com/github/mapbox/geojson-mapnikify/badges/gpa.svg)](https://codeclimate.com/github/mapbox/geojson-mapnikify)
-
 # geojson-mapnikify
+
+Forked from unmaintained https://github.com/mapbox/geojson-mapnik
 
 Transform [GeoJSON](http://geojson.org/) objects into [Mapnik](http://mapnik.org/)
 XML stylesheets with embedded GeoJSON data and [simplestyle-spec](https://github.com/mapbox/simplestyle-spec)-derived
@@ -14,13 +8,25 @@ styles.
 
 ## install
 
-As a dependency:
+As a dependency (directly from GitHub):
 
-    npm install --save @mapbox/geojson-mapnikify
+```bash
+npm install --save github:cropquest/geojson-mapnikify
+```
 
 As a binary:
 
-    npm install -g @mapbox/geojson-mapnikify
+```bash
+npm install -g github:cropquest/geojson-mapnikify
+```
+
+You can also clone the repository and run `npm install` locally if you prefer to pin to a specific commit:
+
+```bash
+git clone https://github.com/cropquest/geojson-mapnikify.git
+cd geojson-mapnikify
+npm install
+```
 
 ## api
 
@@ -36,9 +42,9 @@ If you install `-g`, you can use `geojson-mapnikify` as a binary that takes
 a single GeoJSON file as an argument and writes a Mapnik XML stylesheet
 to stdout.
 
-```
-$ geojson-mapnikify test/data/point-retina.geojson > stylesheet.xml
-$ geojson-mapnikify test/data/point-retina.geojson retina > stylesheet-retina.xml
+```bash
+geojson-mapnikify test/data/point-retina.geojson > stylesheet.xml
+geojson-mapnikify test/data/point-retina.geojson retina > stylesheet-retina.xml
 ```
 
 ### `mapnikify(geojson, retina, callback)`
