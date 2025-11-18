@@ -30,6 +30,8 @@
     "@mapbox/blend": "^2.0.1",
     "@mapbox/geojson-normalize": "~0.0.1",
     "@mapbox/makizushi": "^3.0.1",
+    "@mapnik/core-darwin-arm64": "^4.1.4",
+    "@mapnik/mapnik": "^4.7.5",
     "agentkeepalive": "^4.6.0",
     "minimist": "~1.2.8",
     "needle": "^3.3.1",
@@ -39,9 +41,7 @@
   },
   "devDependencies": {
     "glob": "~12.0.0",
-    "istanbul": "~0.4.5",
-    "mapnik": "npm:@mapnik/mapnik@4.7.5",
-    "nock": "~14.0.10",
+    "istanbul": "~0.4.5",    "nock": "~14.0.10",
     "tape": "~5.9.0"
   }
 }
