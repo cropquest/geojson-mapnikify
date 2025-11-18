@@ -142,11 +142,11 @@ test('urlmarker-jpg', function(t) {
 });
 
 test('urlmarker-custom-client', function(t) {
-    var client = needle.defaults({ response_timeout: 100 });
+    var client = needle.defaults({ response_timeout: 10, read_timeout: 10, open_timeout: 10 });
     var file = fs.readFileSync(path.resolve(__dirname, 'data', 'rocket.png'));
     var scope = nock('http://devnull.mapnik.org')
         .get(/.*/)
-        .delay(300)
+        .delayBody(200)
         .reply(200, file, { 'content-type': 'image/png' });
 
     generatexml.setRequestClient(client);
@@ -188,7 +188,6 @@ test('urlmarker-uncustomize-client', function(t) {
     var file = fs.readFileSync(path.resolve(__dirname, 'data', 'rocket.png'));
     var scope = nock('http://devnull.mapnik.org')
         .get(/.*/)
-        .delay(300)
         .reply(200, file, { 'content-type': 'image/png' });
 
     urlmarker({

@@ -1,5 +1,8 @@
 ## changelog
 
+## 4.0.0
+- Update node-mapnik and other deps, and remove coveralls
+
 ## 3.0.1
 - Allows up to one redirect for requests by default
 - Allows either http or https requests for agent
