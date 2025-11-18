@@ -1,5 +1,8 @@
 ## changelog
 
+## 4.0.1
+- Update deps again
+
 ## 4.0.0
 - Update node-mapnik and other deps, and remove coveralls
 

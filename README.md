@@ -8,12 +8,14 @@ styles.
 
 ## install
 
-Apple Silicon
+Apple Silicon (remove mapnik install from homebrew)
 ```bash
 npm install -g @mapnik/core-darwin-arm64@4.1.4
 git clone https://github.com/cropquest/geojson-mapnikify.git
 cd geojson-mapnikify
 npm -g install
+exec $SHELL
+geojson-mapnikify
 ```
 
 As a dependency (directly from GitHub):
